@@ -26,3 +26,16 @@ let endereco: [string, number, string] = ['Av Principal', 99, '']
 console.log(endereco)
 
 endereco = ['Rua Importante', 20, 'Bloco A']
+
+// enums
+enum Cor {
+    Cinza,
+    Verde,
+    Azul,
+    Laranja,
+    Amarelo,
+    Vermelho
+}
+
+let minhaCor: Cor = Cor.Verde
+console.log(minhaCor) 
