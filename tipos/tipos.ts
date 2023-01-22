@@ -38,4 +38,10 @@ enum Cor {
 }
 
 let minhaCor: Cor = Cor.Verde
-console.log(minhaCor) 
+console.log(minhaCor)
+
+// any
+let carro: any = 'BMW'
+console.log(carro)
+carro = { marca: 'BMW', ano: 2023 }
+console.log(carro)
