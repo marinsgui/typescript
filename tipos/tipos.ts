@@ -74,3 +74,16 @@ let usuario: { nome: string, idade: number } = {
     idade: 26
 }
 console.log(usuario)
+
+// desafio
+let funcionario: { 
+    supervisores: string[], 
+    baterPonto: (hora: number) => string 
+} = {
+    supervisores: ['João', 'Pedro'],
+    baterPonto(hora: number): string {
+        if(hora <= 8) return 'Ponto normal'
+        return 'Fora de horário'
+    }
+}
+console.log(funcionario.supervisores, funcionario.baterPonto(9))
