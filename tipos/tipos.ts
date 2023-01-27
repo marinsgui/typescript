@@ -75,15 +75,18 @@ let usuario: { nome: string, idade: number } = {
 }
 console.log(usuario)
 
+// Alias
+type Funcionario = {
+    supervisores: string[],
+    baterPonto: (hora: number) => string
+}
+
 // desafio
-let funcionario: { 
-    supervisores: string[], 
-    baterPonto: (hora: number) => string 
-} = {
+let funcionario: Funcionario = {
     supervisores: ['João', 'Pedro'],
     baterPonto(hora: number): string {
         if(hora <= 8) return 'Ponto normal'
         return 'Fora de horário'
     }
 }
-console.log(funcionario.supervisores, funcionario.baterPonto(9))
+console.log(funcionario.supervisores, funcionario.baterPonto(8))
