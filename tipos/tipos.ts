@@ -67,3 +67,10 @@ let calculo: (x: number, y: number) => number
 
 calculo = multiplicar
 console.log(multiplicar(2, 5))
+
+// objetos
+let usuario: { nome: string, idade: number } = {
+    nome: 'João',
+    idade: 26
+}
+console.log(usuario)
