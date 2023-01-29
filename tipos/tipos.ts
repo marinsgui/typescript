@@ -122,3 +122,20 @@ const produto = {
         }
     }
 }
+
+// valores opcionais com tipo null
+let alturaOpcional: null | number = 12
+alturaOpcional = null
+
+type Contato = {
+    nome: string,
+    tel1: string | number,
+    tel2: string | number | null
+}
+
+const contato1: Contato = {
+    nome: 'Fulano',
+    tel1: 98765432,
+    tel2: null
+}
+console.log(contato1.nome, contato1.tel1, contato1.tel2)
